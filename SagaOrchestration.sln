@@ -7,8 +7,6 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity", "Identity\Identi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "License", "License\License.csproj", "{A968EDE3-2E32-4D4A-9A4C-573F7E2C2046}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Employee", "Employee\Employee.csproj", "{C7F7646E-10E0-49D8-82FE-E270BB63B890}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestration", "Orchestration\Orchestration.csproj", "{56B71857-308D-4C17-949A-1B7516342915}"
 EndProject
 Global
@@ -25,10 +23,6 @@ Global
 		{A968EDE3-2E32-4D4A-9A4C-573F7E2C2046}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A968EDE3-2E32-4D4A-9A4C-573F7E2C2046}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A968EDE3-2E32-4D4A-9A4C-573F7E2C2046}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C7F7646E-10E0-49D8-82FE-E270BB63B890}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C7F7646E-10E0-49D8-82FE-E270BB63B890}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C7F7646E-10E0-49D8-82FE-E270BB63B890}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C7F7646E-10E0-49D8-82FE-E270BB63B890}.Release|Any CPU.Build.0 = Release|Any CPU
 		{56B71857-308D-4C17-949A-1B7516342915}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{56B71857-308D-4C17-949A-1B7516342915}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56B71857-308D-4C17-949A-1B7516342915}.Release|Any CPU.ActiveCfg = Release|Any CPU
