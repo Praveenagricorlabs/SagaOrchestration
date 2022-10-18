@@ -16,7 +16,7 @@ namespace Orchestration.Controllers
         }
 
         [HttpPost(Name = "AddEmployee")]
-        public async Task<IActionResult> AddEmployee(string name)
+        public async Task<IActionResult> AddEmployee(string name, string license)
         {
             // entry in identity db
             var identityClient = _httpClientFactory?.CreateClient("identity");
@@ -29,15 +29,15 @@ namespace Orchestration.Controllers
 
                 // entry in license db
                 var licenseClient = _httpClientFactory?.CreateClient("license");
-                var licensedata = new StringContent(JsonSerializer.Serialize("liq"), Encoding.UTF8, Application.Json);
-                var licenseResponse = await licenseClient?.PostAsync("https://localhost:7194/license", licensedata);
+                var licenseData = new StringContent(JsonSerializer.Serialize(license), Encoding.UTF8, Application.Json);
+                var licenseResponse = await licenseClient?.PostAsync("https://localhost:7194/license", licenseData);
 
             }
             catch (Exception ex) {
 
                 // compensating transaction if license entry fails
-                var d = await identityClient?.DeleteAsync("https://localhost:7249/users/" + identityId);
-
+                var deleteResponse = await identityClient?.DeleteAsync("https://localhost:7249/users/" + identityId);
+                return BadRequest();
             }
 
 
