@@ -14,7 +14,12 @@ namespace Orchestration.Controllers
         {
             _httpClientFactory = httpClientFactory;
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="name"></param>
+        /// <param name="license"></param>
+        /// <returns></returns>
         [HttpPost(Name = "AddEmployee")]
         public async Task<IActionResult> AddEmployee(string name, string license)
         {
