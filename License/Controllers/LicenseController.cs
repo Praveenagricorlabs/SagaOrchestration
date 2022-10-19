@@ -8,9 +8,9 @@ namespace License.Controllers
     {
         
         [HttpPost(Name = "License")]
-        public int License(string name)
+        public int License([FromBody]  string name)
         {
-            if (name == "liquor")
+            if (name == "drugs")
             {
                 throw new Exception("not allowed");
             }
