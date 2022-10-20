@@ -27,7 +27,11 @@ namespace Orchestration.Controllers
             var identityClient = _httpClientFactory?.CreateClient("identity");
             var identityData = new StringContent( JsonSerializer.Serialize(name), Encoding.UTF8, Application.Json);
             var identityResponse = await identityClient?.PostAsync("https://localhost:7249/users", identityData);
-
+                        
+            if (identityResponse.StatusCode == System.Net.HttpStatusCode.InternalServerError)
+            {
+               return BadRequest();
+            }
             var identityId=await identityResponse.Content.ReadAsStringAsync(); 
 
             // entry in license db
