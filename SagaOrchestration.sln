@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Identity", "Identity\Identi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "License", "License\License.csproj", "{A968EDE3-2E32-4D4A-9A4C-573F7E2C2046}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Orchestration", "Orchestration\Orchestration.csproj", "{56B71857-308D-4C17-949A-1B7516342915}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Orchestrator", "Orchestration\Orchestrator.csproj", "{56B71857-308D-4C17-949A-1B7516342915}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
